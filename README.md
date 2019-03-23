@@ -1,2 +1,3 @@
 # instructions
-How to download VSCode using a mac
+
+How to download VSCode
