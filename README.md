@@ -1,46 +1,53 @@
-# HTML 101
+# Making a "starter script" for IT 102
 
 ## Before we begin
 
 **Text Editor** vs. **IDE**: This is a question you may have when thinking about if your new to programming and having to download many diffent environements to devolop. First, what is an environment? An *Environment* is a place to write to computer software. You can chose to write commands (code) in a basic pre-installed application on your computer to open simple files. Some pre-installed text editors are Nodepad (windows) and TextEdit (mac). An *IDE* is a larger progam that can compile code from human readable code (a programming language) to machine code (binary). A *text editor* is very lightweight and a quick place to edit programs. The good news is that VSCode is a textEditor that can compile code that is very lightweight. It's like a hybrid application from Microsoft and free to use. 
+ 
+**NOTE** You can use any text editor for creating simple HTML, CSS, and JavaScript for websites. I prefer VSCode, but for this class its advised to use Notepad. If you want to download VSCode on your personal computer to use, this link is below.
 
-Here is the link: 
 > https://code.visualstudio.com/
 
-After you download and install the application, open it up.
+Open up the text editor. If using VSCode it will look like this, you get an untitled paged named `Untitled-1` that we will change in the next step.
+
 <img width="700" alt="Screen Shot 2019-03-23 at 9 35 30 AM" src="https://user-images.githubusercontent.com/25112069/54868925-144f3080-4d4f-11e9-99f7-240f4a41ac58.png">
 
 
-**NOTE:** I am working on a Macintosh.
+**NOTE:** I am working on a Macintosh so it might be a little differnent for you if your using a windows computer, but it should be very similar.
 
-navigate to *file/save as/ [hit enter]* and save this page as `hello.html`
+navigate to *file/save as/ [hit enter/or click]* and save this page as **name=** `starter-script` **file type=** `html` and **save it to your desktop**.
 
 Now, the file should look like this:
 
-<img width="700" alt="Screen Shot 2019-03-23 at 9 39 47 AM" src="https://user-images.githubusercontent.com/25112069/54868981-b8d17280-4d4f-11e9-8f59-62717a7b09e6.png">
+<img width="700" alt="Screen Shot 2019-03-23 at 10 18 48 AM" src="https://user-images.githubusercontent.com/25112069/54869466-d9043000-4d55-11e9-8428-31f736efe4b4.png">
 
-How that the file is saved as an `.html` file it will be read as a web page and opened with your browser if you click directly on the the file where you saved it.
+The file is saved as an `.html` file, which means it will be read as a web page and opened with your browser when you click it directly.
 
 Lets try that out.
 
-Navigate to where you saved your document, mine is saved on my desktop.
+Navigate to your desktop (where the file is saved) and *double click*.
 
-<img width="127" alt="Screen Shot 2019-03-23 at 9 45 20 AM" src="https://user-images.githubusercontent.com/25112069/54869042-78262900-4d50-11e9-8c61-60aceac87be6.png">
+<img width="145" alt="Screen Shot 2019-03-23 at 10 35 31 AM" src="https://user-images.githubusercontent.com/25112069/54869549-71e77b00-4d57-11e9-9e22-27db0fdca447.png">
 
-<img width="700" alt="Screen Shot 2019-03-23 at 9 45 48 AM" src="https://user-images.githubusercontent.com/25112069/54869043-78262900-4d50-11e9-83a3-bef6d0390d5b.png">
+<img width="700" alt="Screen Shot 2019-03-23 at 10 35 43 AM" src="https://user-images.githubusercontent.com/25112069/54869547-70b64e00-4d57-11e9-9aa7-5ae09aa174de.png">
 
-It's not very exciting yet is it? We have made an HTML page that doesnt have code or mark up (HTML is not computer code, it's considered a mark up language). The browser takes our mark up and changes it to what want. If we want some text to be in **bold** then we would type `<strong> bold </strong>`. Also, if we wanted our text to be in *italics* we would type `<em> italics </em>` "em" stands for emphasis. These are called "html tags". They represent what we want on the page. Lets make our first HTML document do something.
 
-We will add the code:
+It's not very exciting yet is it? We have made an HTML page that doesnt have code or markup (HTML is not computer code, it's considered a markup language). The browser takes our markup and changes it to what want. If we want some text to be in **bold** then we would type `<strong> bold </strong>`. Also, if we wanted our text to be *italicized* we would type `<em> italicized </em>` "em" stands for emphasis. These are called "html tags". They represent what we want on the page. Lets make our first HTML document do something.
+
+We will add some markup:
+
 ```html
 <!DOCTYPE html>
 <html>
     
 </html>
 ```
-At the top, we begin by saying what type of document this is going to be. then we have our `<html>` tags that say everything in here is going to be my html.
 
-between those `html` tags, we will add a `head` and `body` tag to represent the brains of the document, and the body (the main page) of the document. how it should look something like this. 
+## What does this mean?
+
+At the top (`<!DOCTYPE html>`), says, the document will be HTML.  Then, we write and opening `<html>` tag says "hey here is where my html is going to start and we want it to end when we write `</html>`. Notice the `/`, this is the beginning of a closing tag.  Most tags have open and closing tags, which mean everything in here is going to belong to that type of thing.
+
+Lets add some more.
 
 ```html
 <!DOCTYPE html>
@@ -49,22 +56,92 @@ between those `html` tags, we will add a `head` and `body` tag to represent the 
       </head>
       
       <body>
-            <h1> Hello, World! </h1>  
       </body>
 </html>
 ```
 
-If you tried to run this in the browser would you see anything? No.
+Inside our `<html>` tags we want to add a `head` and `body` tag. This will make more sense as we go, but the head tag represent information about the page, and wont show up on the website. The body tag, will show all the tags on the webpage. Again, this will make more sense as you progress.
 
-Now in the `body` tag, lets add our first tag that will do something. Lets add an `<h1> Hello, World! </h1>`
+Now in the `body` tag, lets add our first tag that will do something in HTML. By adding at `h1 ` tag, it will make a header size 1 (the largest). Add `<h1> Hello, World! </h1>` between the body tags.
 
-lets look at our VSCode, it should look like this:
+lets look at our text editor, and it should look like this:
 
-<img width="700" alt="Screen Shot 2019-03-23 at 10 07 10 AM" src="https://user-images.githubusercontent.com/25112069/54869280-7447d600-4d53-11e9-8831-91adab61c2d6.png">
+<img width="700" alt="Screen Shot 2019-03-23 at 10 51 48 AM" src="https://user-images.githubusercontent.com/25112069/54869698-b5db7f80-4d59-11e9-9d23-f34f235c1ad4.png">
 
 
-Save it, and run this in a browser by double clicking on the file. you should see this. 
 
-<img width="700" alt="Screen Shot 2019-03-23 at 10 08 26 AM" src="https://user-images.githubusercontent.com/25112069/54869290-a6593800-4d53-11e9-8b44-e2ce47aa4a32.png">
+Save the file, and run this in a browser by double clicking on the file saved to your desktop. You should see this this. 
+
+<img width="700" alt="Screen Shot 2019-03-23 at 10 51 54 AM" src="https://user-images.githubusercontent.com/25112069/54869699-b5db7f80-4d59-11e9-8215-555d7b96c393.png">
 
 Congratulations, you have made your very first webpage!
+
+---
+
+## Lets add the JavaScript template you'll be using for the class.
+
+This course you will be learning JavaScript. Unlike HTML, JavaScript is not markup, it's code. Since it's code, we can make it do some cool stuff!
+
+Since, a webpage uses markup well need to add a tag that says "hey, I want to put some javascript on the page." We do that by adding the javascript tag in the body.
+
+```html
+<script language="JavaScript" type="text/JavaScript">
+<!--//
+
+//-->
+</script>
+```
+
+In your text editor, your `starter-script.html` should look like this.
+
+<img width="700" alt="Screen Shot 2019-03-24 at 7 00 18 AM" src="https://user-images.githubusercontent.com/25112069/54880563-1377d680-4e03-11e9-9937-e4372b533814.png">
+
+between your opening `<script language="JavaScript" type="text/JavaScript">` tag, and your closing `</script>` tag, is where you will write your JavaScript.
+
+**NOTE:** The `<h1>` and the `<script>` tag are both in the body and sitting below each other at the same level. In other words, they are "inside" the body tag, and the body tag is "inside" the html tag.
+
+Lets delete the `<h1>` tag from before and write something in JavaScript instead.
+
+Again when writing JavaScript, we will write it inside the `<script>` tag.
+
+add the following,
+
+```JavaScript
+document.write("JavaScript is fun!")
+```
+
+If you run this, you will see:
+
+<img width="700" alt="Screen Shot 2019-03-24 at 7 16 25 AM" src="https://user-images.githubusercontent.com/25112069/54880694-ca288680-4e04-11e9-86dc-40d73aaf8326.png">
+
+The JavaScript line you added reads, "On the document(webpage), lets write "JavaScript is fun!" That's basically what "document.write("some text")" means.  Anyways, lets get a clean starter-script for the class so you have a nice file to work from. 
+
+remove `document.write("JavaScript is fun!")`
+
+Lastly, in the `<head>` tag, add:
+
+```html
+<meta charset="utf-8">
+```
+
+doing those last step, the file should look like this.
+
+<img width="700" alt="Screen Shot 2019-03-24 at 7 25 25 AM" src="https://user-images.githubusercontent.com/25112069/54880772-07d9df00-4e06-11e9-8ccd-2ec930a1d1e4.png">
+
+```html
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8">
+      </head>
+      <body>
+            <script language="JavaScript" type="text/JavaScript">
+            <!--//
+                  
+            //-->
+            </script>
+      </body>
+</html>
+```
+
+If you're curious, you can read more about the `<meta>` tag at https://www.w3schools.com/tags/att_meta_charset.asp but its out of the scope for this class.
