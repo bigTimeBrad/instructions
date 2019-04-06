@@ -2,20 +2,25 @@
 
 ## Before we begin
 
-**Text Editor** vs. **IDE**: This is a question you may have when thinking about if your new to programming and having to download many diffent environements to devolop. First, what is an environment? An *Environment* is a place to write to computer software. You can chose to write commands (code) in a basic pre-installed application on your computer to open simple files. Some pre-installed text editors are Nodepad (windows) and TextEdit (mac). An *IDE* is a larger progam that can compile code from human readable code (a programming language) to machine code (binary). A *text editor* is very lightweight and a quick place to edit programs. The good news is that VSCode is a textEditor that can compile code that is very lightweight. It's like a hybrid application from Microsoft and free to use. 
- 
-**NOTE** You can use any text editor for creating simple HTML, CSS, and JavaScript for websites. I prefer VSCode, but for this class its advised to use Notepad. If you want to download VSCode on your personal computer to use, this link is below.
+**Text Editor** vs. **IDE**: This is a question you may have when thinking about if your new to programming and having to download many diffent environements to devolop. First, what is an environment? An *Environment* is a place to write to computer software. You can chose to write commands (code) in a basic pre-installed application on your computer to open simple files. Some pre-installed text editors are Nodepad (windows) and TextEdit (mac). An *IDE* is a larger progam that can compile code from human readable code (a programming language) to machine code (binary). A *text editor* is very lightweight and a quick place to edit programs. The good news is that VSCode is a textEditor that can compile code that is very lightweight. It's like a hybrid application from Microsoft and free to use.
+
+**NOTE** You can use any text editor for creating simple HTML, CSS, and JavaScript for websites. I prefer VSCode, but for this class its advised to use Notepad or Notepad++. If you want to download VSCode on your personal computer for use, link is below.
 
 > https://code.visualstudio.com/
 
-Open up the text editor. If using VSCode it will look like this, you get an untitled paged named `Untitled-1` that we will change in the next step.
+Open up the text editor. If using VSCode it will look like this, you get an untitled paged named `Untitled-1` that we'll change in the next step.
 
 <img width="700" alt="Screen Shot 2019-03-23 at 9 35 30 AM" src="https://user-images.githubusercontent.com/25112069/54868925-144f3080-4d4f-11e9-99f7-240f4a41ac58.png">
 
 
-**NOTE:** I am working on a Macintosh so it might be a little differnent for you if your using a windows computer, but it should be very similar.
+**NOTE:** I am working on a Macintosh so it might look a little diffent if you're using a windows machine.
 
-navigate to *file/save as/ [hit enter/or click]* and save this page as **name=** `starter-script` **file type=** `html` and **save it to your desktop**.
+navigate to *file/save as/ [hit enter/or click]* and save this page as `starter-script.html`
+
+**name=** `starter-script`<br/>
+**file type=** `html` (hyper-text markup language)<br/>
+<br/>
+ then, **save it to your desktop**.
 
 Now, the file should look like this:
 
@@ -31,10 +36,14 @@ Navigate to your desktop (where the file is saved) and *double click*.
 
 <img width="700" alt="Screen Shot 2019-03-23 at 10 35 43 AM" src="https://user-images.githubusercontent.com/25112069/54869547-70b64e00-4d57-11e9-9aa7-5ae09aa174de.png">
 
+It's not very exciting yet is it? We have made an HTML page that doesnt have code or markup (HTML is not computer code, it's considered a markup language). The browser takes our markup and changes it to what want to be displayed. If we want some text to be in **bold** then we would type `<strong> bold </strong>`. Also, if we wanted our text to be *italicized* we would type `<em> italicized </em>` "em" stands for emphasis. These are called "html tags". They represent what we want on the page. Lets make our first HTML document do something.
 
-It's not very exciting yet is it? We have made an HTML page that doesnt have code or markup (HTML is not computer code, it's considered a markup language). The browser takes our markup and changes it to what want. If we want some text to be in **bold** then we would type `<strong> bold </strong>`. Also, if we wanted our text to be *italicized* we would type `<em> italicized </em>` "em" stands for emphasis. These are called "html tags". They represent what we want on the page. Lets make our first HTML document do something.
+<br/>
 
-We will add some markup:
+**NOTE:** In order to view an `.html` file you will need to wright click the file and open it in a text editor. By Default it will open in a browser.
+<br/><br/>
+
+...Lets add some markup!
 
 ```html
 <!DOCTYPE html>
@@ -45,7 +54,7 @@ We will add some markup:
 
 ## What does this mean?
 
-At the top (`<!DOCTYPE html>`), says, the document will be HTML.  Then, we write and opening `<html>` tag says "hey here is where my html is going to start and we want it to end when we write `</html>`. Notice the `/`, this is the beginning of a closing tag.  Most tags have open and closing tags, which mean everything in here is going to belong to that type of thing.
+At the top (`<!DOCTYPE html>`), tells the browser that this document will be in HTML.  Then, we write and opening `<html>` tag says "hey here is where my html is going to start and we want it to end when we write `</html>`. Notice the `/`, this is the beginning of a closing tag.  Most tags have open and closing tags, which mean everything in here is going to belong to that type of thing.
 
 Lets add some more.
 
@@ -60,21 +69,19 @@ Lets add some more.
 </html>
 ```
 
-Inside our `<html>` tags we want to add a `head` and `body` tag. This will make more sense as we go, but the head tag represent information about the page, and wont show up on the website. The body tag, will show all the tags on the webpage. Again, this will make more sense as you progress.
+Inside our `<html>` tags we want to add a `head` and `body` tag. This will make more sense as we go, but the head tag represents information about the page, and wont show up on the website. The body tag, will show all the tags on the webpage. Again, this will make more sense as you progress.
 
-Now in the `body` tag, lets add our first tag that will do something in HTML. By adding at `h1 ` tag, it will make a header size 1 (the largest). Add `<h1> Hello, World! </h1>` between the body tags.
+Now in the `body` tag, lets add our first tag that will do something in HTML. By adding a `h1` tag, it will make a header size 1 (the largest) be displayed on the screen. Add `<h1> Hello, World! </h1>` between the body tags.
 
 lets look at our text editor, and it should look like this:
 
 <img width="700" alt="Screen Shot 2019-03-23 at 10 51 48 AM" src="https://user-images.githubusercontent.com/25112069/54869698-b5db7f80-4d59-11e9-9d23-f34f235c1ad4.png">
 
-
-
-Save the file, and run this in a browser by double clicking on the file saved to your desktop. You should see this this. 
+**Save the file**, and run this in a browser by double clicking on the file saved to your desktop. You should see this this. 
 
 <img width="700" alt="Screen Shot 2019-03-23 at 10 51 54 AM" src="https://user-images.githubusercontent.com/25112069/54869699-b5db7f80-4d59-11e9-8215-555d7b96c393.png">
 
-Congratulations, you have made your very first webpage!
+Congratulations, you have made your very first webpage! :tada:
 
 ---
 
